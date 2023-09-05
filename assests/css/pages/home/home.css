@@ -1,0 +1,105 @@
+a {
+  text-decoration: none;
+}
+
+header {
+  background-color: rgba(21, 73, 244, 0.633);
+  height: 82px;
+}
+header .logo a {
+  color: #fff;
+}
+header nav a {
+  color: black;
+  margin-right: 50px;
+  color: #fff;
+}
+header .icon {
+  display: flex;
+  justify-content: flex-end;
+}
+
+@media only screen and (max-width: 768px) {
+  header nav {
+    display: none;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 992px) {
+  header nav {
+    display: none;
+  }
+}
+#corporate {
+  background-color: rgba(21, 73, 244, 0.633);
+  padding: 4rem 0;
+  color: #fff;
+}
+#corporate .information {
+  margin-top: 4rem;
+}
+#corporate .information .info h5 {
+  margin: 2rem 0;
+}
+#corporate .information .demo {
+  display: flex;
+  align-items: center;
+}
+#corporate .information .demo a:nth-child(1) {
+  margin-right: 15px;
+  color: blue;
+  background-color: aliceblue;
+  padding: 4px 15px;
+}
+#corporate .information .demo a:nth-child(2) {
+  color: #fff;
+}
+#corporate .information .demo a :nth-child(1) {
+  background-color: rgba(240, 248, 255, 0.704);
+  font-size: 25px;
+  border-radius: 30px;
+}
+#corporate .image img {
+  width: 100%;
+}
+
+#story {
+  padding: 4rem 0;
+}
+#story .img {
+  width: 90%;
+}
+#story .img img {
+  width: 100%;
+  height: 450px;
+}
+#story .right {
+  margin-top: 4rem;
+}
+#story .right .content h3 {
+  margin: 2rem 0;
+  width: 70%;
+}
+#story .right .buttons {
+  background-color: rgba(52, 51, 50, 0.078);
+  height: 40px;
+  display: flex;
+  align-items: center;
+}
+#story .right .buttons span {
+  margin-left: 10px;
+  background-color: white;
+  padding: 3px 6px;
+  font-weight: 700;
+  color: black;
+}
+#story .right .buttons span:nth-child(1) {
+  margin-left: 10px;
+  background-color: blue;
+  padding: 3px 6px;
+  font-weight: 700;
+  color: white;
+}
+#story .right .content-down p {
+  color: rgba(0, 0, 0, 0.507);
+  margin-top: 30px;
+}/*# sourceMappingURL=home.css.map */

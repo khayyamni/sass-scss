@@ -1,0 +1,146 @@
+@import '../../partials/variables';
+@import'../../partials/mixins';
+
+a{
+    text-decoration: none;
+}
+
+header{
+    @include back-color(rgba(21, 73, 244, 0.633));
+    height: 82px;
+   
+    .logo{
+        a{
+                color: $color-main;
+        }
+     
+    }
+
+    nav{
+
+
+        a{
+            color: $colors-nav-a;
+            margin-right: 50px;
+            color: $color-main;
+            
+        }
+    }
+
+
+    .icon{
+       
+        display: flex;
+        justify-content: flex-end;    
+    }
+
+};
+
+@media only screen and (min-width:992px){
+    
+};
+
+
+
+@media only screen and (max-width:768px){
+    header nav{
+        display: none;
+    }
+};
+
+@media all and (min-width:768px) and (max-width:992px){
+    header nav{
+        display: none;
+    }
+};
+
+
+
+#corporate{
+    @include back-color(rgba(21, 73, 244, 0.633));
+    @include pad-section;
+    color: $color-main;
+
+    .information{
+        margin-top: 4rem;
+
+        .info{
+            h5{
+                margin: 2rem 0;
+            }
+        }
+
+        .demo{
+            display: flex;
+            align-items: center;
+            a:nth-child(1){
+                margin-right: 15px;
+                color: blue;
+                background-color: aliceblue;
+                padding: 4px 15px;
+            }
+            a:nth-child(2){
+                color: $color-main;
+            }
+
+            a{
+                :nth-child(1){
+                    background-color: rgba(240, 248, 255, 0.704);
+                    font-size: 25px;
+                    border-radius: 30px;
+                }
+            }
+
+        }
+    }
+
+
+    .image{
+        img{
+            width: 100%;
+        }
+    }
+}
+
+
+#story{
+    @include pad-section;
+    .img{
+        width: 90%;
+        img{
+            width: 100%;
+            height: 450px;
+        }
+    }
+
+    .right{
+        margin-top: 4rem;
+        .content{
+            h3{
+                margin: 2rem 0;
+                width: 70%;
+            }
+        }
+        .buttons{
+            background-color: rgba(52, 51, 50, 0.078);
+            height: 40px;
+            display: flex;
+            align-items: center;
+            span{
+                
+                @include btn-story;
+
+            }
+            span:nth-child(1){
+               @include btn-story($color:white, $back-color:blue);
+               
+            }
+        }
+        .content-down{
+            p{
+                color: rgba(0, 0, 0, 0.507);
+                margin-top: 30px;
+            }
+        }
+    }
+}

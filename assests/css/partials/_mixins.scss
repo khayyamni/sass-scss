@@ -1,0 +1,15 @@
+@mixin back-color($color){
+    background-color: $color;
+}
+
+@mixin pad-section{
+    padding: 4rem 0;
+}
+
+@mixin btn-story($color: black, $back-color:white){
+    margin-left: 10px;
+    background-color: $back-color;
+    padding: 3px 6px;
+    font-weight: 700;
+    color: $color;
+}
